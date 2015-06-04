@@ -11,3 +11,7 @@
 
 目录：
 data目录移入g_common里面
+
+
+文件：
+include\dialog\select_templets.php	修改目录地址

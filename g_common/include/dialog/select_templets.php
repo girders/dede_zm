@@ -65,7 +65,10 @@ function ReturnValue(reimg)
 <td width="30%" align="center" background="img/wbg.gif" class='linerow'><strong>最后修改时间</strong></td>
 </tr>
 <?php
-$dh = dir($inpath);
+//$temp_path_0604=DEDETEMPLATE;
+//$cfg_basedir.$activepath;
+$dh = dir("../");
+print_r();
 $ty1="";
 $ty2="";
 while($file = $dh->read()) {
