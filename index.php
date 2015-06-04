@@ -10,7 +10,7 @@
 //自动生成HTML版
 if(isset($_GET['upcache']) || !file_exists('index.html'))
 {
-    require_once (dirname(__FILE__) . "/include/common.inc.php");
+    require_once (dirname(__FILE__) . "/g_common/include/common.inc.php");
     require_once DEDEINC."/arc.partview.class.php";
     $GLOBALS['_arclistEnv'] = 'index';
     $row = $dsql->GetOne("Select * From `#@__homepageset`");
