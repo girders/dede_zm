@@ -166,7 +166,11 @@ $cfg_isUrlOpen = @ini_get("allow_url_fopen");
 $cfg_clihost = 'http://'.$_SERVER['HTTP_HOST'];
 
 //站点根目录
-$cfg_basedir = preg_replace('#'.$cfg_cmspath.'\/include$#i', '', DEDEINC);
+//$cfg_basedir = preg_replace('#'.$cfg_cmspath.'\/include$#i', '', DEDEINC);
+
+$cfg_basedir = preg_replace('#'.$cfg_cmspath.'\/g_common/include$#i', '', DEDEINC);
+
+
 if($cfg_multi_site == 'Y')
 {
     $cfg_mainsite = $cfg_basehost;

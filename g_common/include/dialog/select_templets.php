@@ -17,6 +17,7 @@ $cfg_txttype = 'htm|html|tpl|txt|dtp';
 $activepath = str_replace('.', '', $activepath);
 $activepath = preg_replace("#\/{1,}#", '/', $activepath);
 $templetdir  = $cfg_templets_dir;
+
 if(strlen($activepath) < strlen($templetdir))
 {
     $activepath = $templetdir;
@@ -65,10 +66,12 @@ function ReturnValue(reimg)
 <td width="30%" align="center" background="img/wbg.gif" class='linerow'><strong>最后修改时间</strong></td>
 </tr>
 <?php
+
+$dh = dir($inpath);
 //$temp_path_0604=DEDETEMPLATE;
 //$cfg_basedir.$activepath;
-$dh = dir("../");
-print_r();
+//print_r($cfg_basedir);
+//exit;
 $ty1="";
 $ty2="";
 while($file = $dh->read()) {
