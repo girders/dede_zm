@@ -45,7 +45,7 @@ function postBadGood(ftype,fid)
 		SetCookie('badgoodid',fid,1);
 	}
 	myajax = new DedeAjax(taget_obj,false,false,'','','');
-	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	myajax.SendGet2("/g_common/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
 }
 function postDigg(ftype,aid)
 {
@@ -77,14 +77,14 @@ function postDigg(ftype,aid)
 		SetCookie('diggid',aid,1);
 	}
 	myajax = new DedeAjax(taget_obj,false,false,'','','');
-	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	var url = "/g_common/plus/digg_ajax.php?action="+ftype+"&id="+aid;
 	myajax.SendGet2(url);
 }
 function getDigg(aid)
 {
 	var taget_obj = document.getElementById('newdigg');
 	myajax = new DedeAjax(taget_obj,false,false,'','','');
-	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	myajax.SendGet2("/g_common/plus/digg_ajax.php?id="+aid);
 	DedeXHTTP = null;
 }
 -->
@@ -114,6 +114,8 @@ function getDigg(aid)
     	<ul>
       	<li><a href='/'><span>主页</span></a></li>
       	<li class='hover'><a href='/dsfsdfs/' ><span>dsfsdfs</span></a></li>
+      	<li><a href='/sdgsdgvsd/' ><span>sdgsdgvsd</span></a></li>
+      	
     	</ul>
     </div>	
     <div class="search">
@@ -151,7 +153,7 @@ function getDigg(aid)
   </div>
   <!-- /title -->
   <div class="info"> <small>时间:</small>2015-06-04 12:02<small>来源:</small>未知 <small>作者:</small>admin <small>点击:</small>
-   <script src="/plus/count.php?view=yes&aid=1&mid=1" type='text/javascript' language="javascript"></script>
+   <script src="/g_common/plus/count.php?view=yes&aid=1&mid=1" type='text/javascript' language="javascript"></script>
    次</div>
   <!-- /info -->
   
@@ -207,9 +209,9 @@ function getDigg(aid)
    <!-- /context -->
    <div class="actbox">
     <ul>
-     <li id="act-fav"><a href="/plus/stow.php?aid=1" target="_blank">收藏</a></li>
-     <li id="act-err"><a href="/plus/erraddsave.php?aid=1&title=sdfsdgsdgsgs" target="_blank">挑错</a></li>
-     <li id="act-pus"><a href="/plus/recommend.php?aid=1" target="_blank">推荐</a></li>
+     <li id="act-fav"><a href="/g_common/plus/stow.php?aid=1" target="_blank">收藏</a></li>
+     <li id="act-err"><a href="/g_common/plus/erraddsave.php?aid=1&title=sdfsdgsdgsgs" target="_blank">挑错</a></li>
+     <li id="act-pus"><a href="/g_common/plus/recommend.php?aid=1" target="_blank">推荐</a></li>
      <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
     </ul>
    </div>

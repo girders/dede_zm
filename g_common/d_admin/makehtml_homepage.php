@@ -49,7 +49,7 @@ else if($dopost=="make")
     } else { 
         // 动态浏览
         if (file_exists($homeFile)) @unlink($homeFile);
-        echo "采用动态浏览模式：<a href='../index.php' target='_blank'>浏览...</a><br />";
+        echo "采用动态浏览模式：<a href=".DEDEROOT."'../index.php' target='_blank'>浏览...</a><br />";
     }
     
     $iquery = "UPDATE `#@__homepageset` SET showmod='$showmod'";

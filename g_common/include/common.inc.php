@@ -171,6 +171,7 @@ $cfg_clihost = 'http://'.$_SERVER['HTTP_HOST'];
 $cfg_basedir = preg_replace('#'.$cfg_cmspath.'\/g_common/include$#i', '', DEDEINC);
 
 
+
 if($cfg_multi_site == 'Y')
 {
     $cfg_mainsite = $cfg_basehost;
@@ -194,6 +195,8 @@ $cfg_phpurl = $cfg_mainsite.$cfg_plus_dir;
 
 $cfg_data_dir = $cfg_cmspath.'/data';
 $cfg_dataurl = $cfg_mainsite.$cfg_data_dir;
+
+
 
 //会员目录
 $cfg_member_dir = $cfg_cmspath.'/member';
@@ -221,6 +224,9 @@ $cfg_soft_dir = $cfg_medias_dir.'/soft';
 
 //上传的多媒体文件目录
 $cfg_other_medias = $cfg_medias_dir.'/media';
+
+print_r($cfg_user_dir);
+exit;
 
 //软件摘要信息，****请不要删除本项**** 否则系统无法正确接收系统漏洞或升级信息
 $cfg_version = 'V57_UTF8_SP1';
