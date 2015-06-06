@@ -225,8 +225,7 @@ $cfg_soft_dir = $cfg_medias_dir.'/soft';
 //上传的多媒体文件目录
 $cfg_other_medias = $cfg_medias_dir.'/media';
 
-print_r($cfg_user_dir);
-exit;
+
 
 //软件摘要信息，****请不要删除本项**** 否则系统无法正确接收系统漏洞或升级信息
 $cfg_version = 'V57_UTF8_SP1';
