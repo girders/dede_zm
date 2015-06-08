@@ -183,7 +183,7 @@ if(count($safeMsg) > 0)
 <!--安全检测提示 -->
 <div id="safemsg">
   <dl class="dbox" id="item1" style="margin-left:0.5%;margin-right:0.5%; width:97%">
-    <dt class='lside'><span class='l'><?php echo $cfg_soft_enname; ?>安全提示</span></dt>
+    <dt class='lside'><span class='l'>安全提示</span></dt>
     <dd>
       <div id='safelist'>
         <table width="98%" border="0" cellspacing="1" cellpadding="0" style="color:red">
