@@ -9,6 +9,8 @@
 修改文章命名规则为：{typedir}/{aid}.html
 修改自动摘要和文章标题的长度
 修改文档自定义属性
+修改后台编辑器显示问题
+
 
 目录：
 data目录移入g_common里面
@@ -20,4 +22,3 @@ include\dialog\select_templets.php	修改目录地址
 
 
 
-预计下次修改后台编辑器显示问题

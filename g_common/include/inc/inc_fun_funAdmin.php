@@ -186,7 +186,9 @@ function SpGetEditor($fname,$fvalue,$nheight="350",$etype="Basic",$gtype="print"
     {
         require_once(DEDEINC.'/ckeditor/ckeditor.php');
         $CKEditor = new CKEditor();
-        $CKEditor->basePath = $GLOBALS['cfg_cmspath'].'/include/ckeditor/' ;
+//        $ckeditor->basepath = $globals['cfg_cmspath'].'/include/ckeditor/' ;
+//	修改编辑器路径，默认的调用地址不够全面。
+        $ckeditor->basepath = DEDEINC.'/ckeditor/' ;
         $config = $events = array();
         $config['extraPlugins'] = 'dedepage,multipic,addon';
 		if($bbcode)
