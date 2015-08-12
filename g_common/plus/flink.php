@@ -27,6 +27,7 @@ if($dopost=='save')
     $webname = htmlspecialchars($webname);
     $url = htmlspecialchars($url);
     $logo = htmlspecialchars($logo);
+	$logo = RemoveXSS($logo);
     $typeid = intval($typeid);
     $dtime = time();
     $query = "INSERT INTO `#@__flink`(sortrank,url,webname,logo,msg,email,typeid,dtime,ischeck)
